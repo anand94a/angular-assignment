@@ -1,0 +1,13 @@
+<ul ngbNav [activeId]="route.fragment | async" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink routerLink='/blog'  routerLinkActive="active">Article List</a>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink routerLink='/addblog'  routerLinkActive="active">Add Article</a>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink routerLink='/editBlog/:id'  routerLinkActive="active">Edit Article</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+<div id="container" style="margin: 30px;">
+
+    <form [formGroup]="articleForm" (submit)="onSubmit()" class="form-horizontal">
+        <div class="form-group">
+            <label>Title:</label>
+            <input type="text" class="form-control" formControlName="title">
+        </div>
+        <br />
+        <div class="form-group">
+            <label>Content:</label>
+            <textarea  class="form-control" formControlName="body"></textarea>
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary" [disabled]="!articleForm.valid"
+        >Submit</button>
+    </form>
+</div>
